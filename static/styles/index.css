@@ -1,0 +1,23 @@
+h1, p, input {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+#audio {
+  margin: 20px;
+}
+
+#fileBtn:hover, #submitBtn:hover {
+  cursor: pointer;
+}
+
+#submitBtn {
+  background-color: #2e8a31;
+  color: white;
+  border: none;
+  border-radius: 3px;
+} 
+
+#text {
+  margin: 20px;
+}

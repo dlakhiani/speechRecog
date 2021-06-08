@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="{{url_for('static', filename='styles/index.css')}}"/>
+
+  <title>FlaskTask</title>
+</head>
+<body>
+  <div id="audio">
+    <form method="post" enctype="multipart/form-data">
+      <input type="file" id="fileBtn" name="file"/>
+      <input type="submit" id="submitBtn" value="Convert"/>
+    </form>
+  </div>
+
+  <br>
+
+  {% if transcript != "" %}
+  <div id="text">
+    <h1>Transcript</h1>
+    <p>{{transcript}}</p>
+  </div>
+  {% endif %}
+  
+</body>
+</html>
